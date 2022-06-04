@@ -4,7 +4,7 @@
   "description": "fun game to pass your time",
   "main": "index.js",
   "scripts": {
-    "tailit": "npx tailwindcss -i ./assets/app.css -o ./dist/app.css",
+    "tailit": "npx tailwindcss -i ./assets/app.css -o ./dist/app.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
