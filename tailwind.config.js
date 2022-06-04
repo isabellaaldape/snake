@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'fascinate-inline':['"Fascinate Inline"','regular']
+        'fascinate-inline':['"Fascinate Inline"','cursive']
       }
     },
     
