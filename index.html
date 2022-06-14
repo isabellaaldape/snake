@@ -12,14 +12,26 @@
 
 <script>
 //when it loads play music.
-window.onload = (event) => {
-    alert('You are about to start. Get ready :)');
-} ;
+// window.onload = (event) => {
+//     alert('You are about to start. Get ready :)');
+// } ;
 
 
+let music = document.getElementById('music');
+
+function play(){
+  this.music.play();
+}
+function stop(){
+    this.music.pause();
+}
 </script>
 </head>
 <body class="flex justify-center items-center h-screen">
+    <audio id="music" src="/assets/music/Granite.mp3" preload="auto"></audio>
+    <button onclick="play()" class="p-4 bg-red-200 rounded-lg hover:bg-red-300">play song</button>
+    <button onclick="stop()" class="p-4 bg-red-200 rounded-lg hover:bg-red-300">stop song</button>
+
     <div>
         <h1 class="flex justify-center mb-8 text-7xl font-fascinate-inline">Snakey</h1>
         <canvas id="game" class="bg-pink-400 h-96" ></canvas>
