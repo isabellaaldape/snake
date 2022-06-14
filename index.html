@@ -2,11 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake</title>
+    <script src="dist/app.css"></script>
+    <title>Snakey</title>
+   
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dist/app.css">
+
+<script>
+//when it loads play music.
+// window.onload = (event) => {
+//     alert('You are about to start. Get ready :)');
+// } ;
+
+
+let music = document.getElementById('music');
+
+function play(){
+  this.music.play();
+}
+function stop(){
+    this.music.pause();
+}
+</script>
 </head>
-<body>
-This is the start of my game.  
+<body class="flex justify-center items-center h-screen">
+    <audio id="music" src="/assets/music/Granite.mp3" preload="auto"></audio>
+    <button onclick="play()" class="p-4 bg-red-200 rounded-lg hover:bg-red-300">play song</button>
+    <button onclick="stop()" class="p-4 bg-red-200 rounded-lg hover:bg-red-300">stop song</button>
+
+    <div>
+        <h1 class="flex justify-center mb-8 text-7xl font-fascinate-inline">Snakey</h1>
+        <canvas id="game" class="bg-pink-400 h-96" ></canvas>
+    </div>
+  
 </body>
 </html>
