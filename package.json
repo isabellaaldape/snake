@@ -2,7 +2,7 @@
   "name": "snakey",
   "version": "0.0.1",
   "description": "fun game to pass your time",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
