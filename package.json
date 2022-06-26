@@ -1,10 +1,12 @@
 {
   "name": "snakey",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "fun game to pass your time",
   "main": "index.js",
   "scripts": {
-    "tailit": "npx tailwindcss -i ./assets/app.css -o ./dist/app.css --watch",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +25,9 @@
   },
   "homepage": "https://github.com/isabellaaldape/snakey#readme",
   "devDependencies": {
-    "tailwindcss": "^3.0.24"
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4",
+    "vite": "^2.9.12"
   }
 }
