@@ -1,11 +1,5 @@
 import './src/index.css';
 
+import * as Game from './src/game.js';
 
-let music = document.getElementById('music');
-
-function play(){
-  this.music.play();
-}
-function stop(){
-    this.music.pause();
-}
+Game.init();
